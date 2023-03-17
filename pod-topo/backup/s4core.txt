@@ -1,0 +1,14 @@
+table_add MyIngress.ipv4_lpm MyIngress.ipv4_forward 10.1.0.0/16 => 00:00:00:01:04:00 1
+table_add MyIngress.ipv4_lpm MyIngress.ipv4_forward 10.2.0.0/16 => 00:00:00:02:04:00 2
+table_add MyIngress.ipv4_lpm MyIngress.ipv4_forward 10.3.0.0/16 => 00:00:00:03:04:00 3
+table_add MyIngress.ipv4_lpm MyIngress.ipv4_forward 10.4.0.0/16 => 00:00:00:04:04:00 4
+
+table_add MyIngress.ipv4_lpm_backup MyIngress.ipv4_forward_backup 10.1.0.0/16 => 00:00:00:02:04:00 2
+table_add MyIngress.ipv4_lpm_backup MyIngress.ipv4_forward_backup 10.2.0.0/16 => 00:00:00:03:04:00 3
+table_add MyIngress.ipv4_lpm_backup MyIngress.ipv4_forward_backup 10.3.0.0/16 => 00:00:00:04:04:00 4
+table_add MyIngress.ipv4_lpm_backup MyIngress.ipv4_forward_backup 10.4.0.0/16 => 00:00:00:01:04:00 1
+
+mirroring_add 1 1
+mirroring_add 2 2
+mirroring_add 3 3
+mirroring_add 4 4
