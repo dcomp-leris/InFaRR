@@ -1,0 +1,4 @@
+cd /home/p4/FRRFTK4/Control/
+simple_switch_CLI  --thrift-port 9107 < gatilhoporta3down250.txt
+simple_switch_CLI  --thrift-port 9094 < gatilhoporta4down250.txt
+

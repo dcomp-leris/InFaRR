@@ -1,0 +1,1 @@
+register_write pacote_gatilho 4 250

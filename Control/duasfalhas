@@ -1,0 +1,8 @@
+./s1c1-s3c1-down
+sleep 2
+./s4c1-s3core-down
+sleep 4
+./s4c1-s3core-up
+sleep 2
+./s1c1-s3c1-up
+

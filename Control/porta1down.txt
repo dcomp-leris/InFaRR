@@ -1,0 +1,1 @@
+register_write porta_status 1 1

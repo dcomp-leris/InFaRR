@@ -1,0 +1,6 @@
+./s3c3-s1core-down
+./s3c3-s2core-down
+sleep 15
+./s3c3-s1core-up
+./s3c3-s2core-up
+

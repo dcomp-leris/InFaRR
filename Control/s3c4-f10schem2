@@ -1,0 +1,3 @@
+simple_switch_CLI  --thrift-port 9103 < porta3down.txt
+simple_switch_CLI  --thrift-port 9094 < porta4down.txt
+

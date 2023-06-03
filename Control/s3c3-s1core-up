@@ -1,0 +1,4 @@
+cd /home/p4/FRRFTK4/Control/
+simple_switch_CLI  --thrift-port 9102 < porta3up.txt
+simple_switch_CLI  --thrift-port 9094 < porta3up.txt
+
